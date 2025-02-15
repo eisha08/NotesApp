@@ -45,6 +45,7 @@ const Home = () => {
     <div className="bg-[#E1F8DC] h-[100vh] w-[100vw] flex justify-center items-center">
 
       <div className="bg-[#CAF1DE] h-[70vh] w-[40vw] flex flex-col items-center justify-center gap-4 p-6 rounded-lg shadow-lg">
+        <div className="text-3xl font-semibold py-2 text-purple-700">Save your Notes</div>
         <div className="w-full">
           <input
             type="text"
@@ -61,7 +62,7 @@ const Home = () => {
             onChange={(e) => setContent(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded-md h-32 resize-none"
           ></textarea>
-          <button onClick={createPaste} className="text-lg font-semibold px-8 b-1 bg-blue-300 py-2 hover:bg-gray-400 cursor-pointer mt-4">
+          <button onClick={createPaste} className="text-lg font-semibold px-8 rounded-md b-1 bg-blue-300 py-2 hover:bg-gray-400 cursor-pointer mt-4">
             {
                 pasteID ? "UpdatePaste" : "CreatePaste"
             }

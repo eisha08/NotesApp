@@ -14,9 +14,9 @@ const ViewPaste = () => {
   }
 
   return (
-    <div className="flex justify-center mt-20">
+    <div className="flex justify-center py-12 bg-[#E1F8DC] h-[100vh] w-[100vw]">
     <div className="w-[35vw]">
-      <div className="p-6 flex flex-col justify-center items-center border rounded-lg">
+      <div className="p-6 flex flex-col justify-center items-center border-1 shadow-lg border-gray-300 rounded-lg">
         <div className="text-2xl font-semibold">{paste.title}</div>
         <div className="mt-4">{paste.content}</div>
         <div>

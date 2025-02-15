@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { addPaste,deletePaste,removeAllPaste,updatePaste } from './assets/redux/pasteSlice'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import Header from "./assets/components/Header";
+import Home from "./assets/components/Home";
+import AllPaste from "./assets/components/AllPaste";
 
 function App() {
-
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   return (
-    <>
-      <div className='text-2xl'>
-       Notes App 
-       </div>
-    </>
-  )
+    <Router>
+      <Header /> {/* Navbar will be shown on all pages */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/allpaste" element={<AllPaste />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

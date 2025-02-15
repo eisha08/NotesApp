@@ -23,7 +23,7 @@ const AllPaste = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-center bg-[#E1F8DC] h-fit py-4">
+    <div className="flex flex-col justify-center items-center bg-[#E1F8DC] min-h-screen py-4">
       <div className="py-8 px-6 text-3xl font-semibold text-purple-700">All Pastes</div>
       <div>
         <input
